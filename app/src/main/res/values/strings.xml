@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CUI Friendly Ride</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_login">Log in</string>
+    <string name="menu_logout">Log out</string>
+    <string name="login_label">Log In</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="send_text">Send</string>
+    <string name="lorem">Lorem ipsum dolor sit amet</string>
+    <string name="title_sign_in">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hint_password">••••••</string>
+    <string name="hint_email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="heading_recent">Recent</string>
+    <string name="heading_my_posts">My Posts</string>
+    <string name="heading_my_top_posts">My Top Posts</string>
+    <string name="driver_post_button_title">Offer New Carpool</string>
+    <string name="rider_post_button_title">Request New Carpool</string>
+    <string name="driver_feed_title">Ride Requests</string>
+    <string name="rider_feed_title">Drive Offers</string>
+    <string name="post_label_from">From</string>
+    <string name="post_label_to">To</string>
+    <string name="post_label_passengerCount">Maximum Passengers</string>
+    <string name="post_label_pickupPoint">Pickup Point</string>
+    <string name="heading_recent_organizations">All Organizations</string>
+    <string name="heading_my_organizations">My Organizations</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_map_detail">MapDetailActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_carpool_detail">CarpoolDetailActivity</string>
+    <string name="text_preferences">Preferences</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_new_carpool">NewCarpoolActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="infoprompt">Select One of the Following:</string>
+    <string name="enter_info">Enter Your Information</string>
+    <string name="info_first">First Name</string>
+    <string name="info_last">Last Name</string>
+    <string name="info_date">Date of Birth</string>
+    <string name="info_phone">(555)555-555</string>
+    <string name="info_choose_info">Choose Your Default Organization</string>
+    <string name="info_save">Save Information</string>
+    <string name="info_skip">Skip This</string>
+    <string name="organizations_prompt">Choose an Organization</string>
+    <string name="info_join_an_organization">Join an Organization</string>
+
+    <string name="title_activity_profile_page">ProfilePageActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="gender">Gender</string>
+    <string-array name="organizations_list">
+        <item>San Jose State University</item>
+        <item>DeAnza College</item>
+        <item>West Valley College</item>
+    </string-array>
+</resources>

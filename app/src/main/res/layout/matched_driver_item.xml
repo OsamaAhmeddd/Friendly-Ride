@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.2">
+    <TextView
+        android:id="@+id/matched_driver_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Saim"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/matched_driver_item_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From: F8"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/matched_driver_item_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: Blue Area"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/matched_driver_item_departureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="departureTime"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/matched_driver_item_ArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arrivalTime"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/matched_driver_item_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/matched_driver_item_DriverPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"/>
+        <TextView
+            android:id="@+id/matched_driver_item_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC: Yes"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/matched_driver_item_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: Male"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/matched_driver_item_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music: Yes"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/matched_driver_item_smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoking: Yes"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

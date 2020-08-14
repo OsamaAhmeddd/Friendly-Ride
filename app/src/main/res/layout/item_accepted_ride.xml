@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/accepted_rides_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Saim Nasser"
+            android:textSize="18sp"
+            android:textColor="@color/organizationColor"/>
+        <TextView
+            android:id="@+id/accepted_rides_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: saimnasser@gmail.com"
+            android:textSize="18sp"
+            android:layout_below="@+id/accepted_rides_name"
+            android:textColor="@color/organizationColor"/>
+
+        <TextView
+            android:id="@+id/accepted_rides_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fare: 150Rs"
+            android:textSize="18sp"
+            android:layout_below="@+id/accepted_rides_Email"
+            android:textColor="@color/organizationColor"/>
+        <TextView
+            android:id="@+id/accepted_rides_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textSize="18sp"
+            android:layout_below="@+id/accepted_rides_fare"
+            android:textColor="@color/organizationColor"/>
+        <TextView
+            android:id="@+id/accepted_rides_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textSize="18sp"
+            android:layout_below="@+id/accepted_rides_source"
+            android:textColor="@color/organizationColor"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/accepted_rides_btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/accepted_rides_destination"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/complete_rides_btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/accepted_rides_destination"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/gradient2"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/carousel_title"
+            style="@style/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/post_carousel_label"
+            style="@style/post_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/carousel_title"
+            android:text="@string/post_label_passengerCount" />
+
+        <EditText
+            android:id="@+id/passengerCount"
+            style="@style/post_text_field"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/post_carousel_label"
+            android:layout_centerHorizontal="true"
+            android:hint="Maximum Number of Passengers"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/post_carousel_Pref"
+            style="@style/post_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/passengerCount"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_preferences" />
+        <!--Gender-->
+        <TextView
+            android:id="@+id/post_carousel_Gender"
+            style="@style/post_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_carousel_Pref"
+            android:layout_marginStart="30dp"
+            android:labelFor="@+id/gender_radioGroup"
+            android:text="@string/gender" />
+
+        <RadioGroup
+            android:id="@+id/gender_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_carousel_Pref"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/post_carousel_Gender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="18sp"
+                android:id="@+id/gender_male"/>
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="18sp"
+                android:id="@+id/gender_female"/>
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both"
+                android:textSize="18sp"
+                android:id="@+id/gender_both"/>
+        </RadioGroup>
+
+        <!--Smoking-->
+        <TextView
+            android:id="@+id/post_carousel_Smoking"
+            style="@style/post_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_carousel_Gender"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:labelFor="@+id/gender_radioGroup"
+            android:text="Smoking" />
+
+        <RadioGroup
+            android:id="@+id/smoking_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_radioGroup"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/post_carousel_Smoking"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="18sp"
+                android:id="@+id/smoking_Yes"/>
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="No"
+                android:textSize="18sp"
+                android:id="@+id/smoking_No"/>
+        </RadioGroup>
+
+        <!--Music-->
+        <TextView
+            android:id="@+id/post_carousel_Music"
+            style="@style/post_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_carousel_Smoking"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp"
+            android:labelFor="@+id/music_RadioGroup"
+            android:text="Music" />
+
+        <RadioGroup
+            android:id="@+id/music_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smoking_RadioGroup"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/post_carousel_Smoking"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="18sp"
+                android:id="@+id/music_Yes"/>
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="No"
+                android:textSize="18sp"
+                android:id="@+id/music_No"/>
+        </RadioGroup>
+
+        <!--AC-->
+        <TextView
+            android:id="@+id/post_carousel_AC"
+            style="@style/post_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_carousel_Music"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:labelFor="@+id/music_RadioGroup"
+            android:text="AC" />
+
+        <RadioGroup
+            android:id="@+id/aC_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/music_RadioGroup"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/post_carousel_AC"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="18sp"
+                android:id="@+id/ac_Yes"/>
+
+            <RadioButton
+                style="@style/post_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="No"
+                android:textSize="18sp"
+                android:id="@+id/ac_No"/>
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

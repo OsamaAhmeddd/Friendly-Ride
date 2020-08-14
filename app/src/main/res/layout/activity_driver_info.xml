@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverInfoActivity"
+    android:padding="20dp"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/driver_info_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Information"
+            android:textColor="@color/organizationColor"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/driver_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Saim"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_totalPassengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Passengers: 3"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_Source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: F8"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination: Blue Area"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: Oct 5th"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_departureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Time: 1235"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_arrivalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival Time: 1235"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="8dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/driver_info_Title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Preferences"
+            android:textColor="@color/organizationColor"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/layout1"/>
+        <TextView
+            android:id="@+id/driver_info_preferences_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC: Yes"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_preferences_Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music: Yes"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_preferences_Smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoking: Yes"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/driver_info_preferences_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: Male"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="12dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+            >
+            <TextView
+                android:id="@+id/driver_info_Title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fare Amount"
+                android:textColor="@color/organizationColor"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/layout1"/>
+            <TextView
+                android:id="@+id/driver_info_fare_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150 Rs"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+
+                />
+            <Button
+                android:id="@+id/driver_info_fare_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Ride"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

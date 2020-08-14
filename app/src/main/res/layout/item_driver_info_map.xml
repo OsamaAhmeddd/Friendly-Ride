@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/driver_info_map_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:textColor="@color/organizationColor"
+        />
+        <Button
+            android:id="@+id/driver_info_map_complete_button"
+            android:layout_marginTop="8dp"
+            android:text="Rate"
+            android:layout_below="@+id/driver_info_map_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/driver_info_map_message_button"
+            android:layout_marginTop="8dp"
+
+            android:text="Chat"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/driver_info_map_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
